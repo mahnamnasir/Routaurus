@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Routaurus </title>
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <!--Navigation bar-->
+    <div class="header">
+        <a href="#"><img src="./resources/image/logo.jpg" alt="logo" class="logo"></a>    
+        <ul class="navigationbar">
+            <li><a href="#mission">Home</a></li>
+            <li><a href="#featured">Our Riders</a></li>
+            <li><a href="#practice-session">Practice Session</a></li>
+            <li><a href="./login.html">Register Now</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#mission">Home</a></li>
+              <li><a class="menu__item" href="#featured">Our Rider</a></li>
+              <li><a class="menu__item" href="#practice-session">Practice Session</a></li>
+              <li><a class="menu__item" href="./login.html">Register Now</a></li>
+              <li><a class="menu__item" href="#footer">Social Media</a></li>
+            </ul>
+          </div>
+     </div>
+     <!--Hero Banner-->
+     <div class="hero-image">
+         <div class="hero-text">
+             <h1>Routaturus</h1>
+             <p>Bike doesnot matter your skill Matters</p>
+             <a href="./login.html">
+                 <button>Join Us</button>
+                </a>
+             
+             <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+         </div>
+     </div>
+      <!--Portfolio-->
+      <div id="featured">
+          <br>
+        <h1>Our Riders</h1>
+        <h2>Make them stop and stair</h2>
+      <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./resources/image/slider images/1A8A2687 (4).jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./resources/image/slider images/1A8A3097 (1).jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./resources/image/slider images/1A8A3982-2 (3).jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./resources/image/slider images/1A8A9819 (1).jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./resources/image/slider images/616A8376.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./resources/image/slider images/FB_IMG_1608581257129.jpg" alt=""></div>
+              
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+      </div>
+      </div>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+          const swiper = new Swiper('.swiper', {
+// Optional parameters
+autoplay: {
+    delay: 3000,
+    displayOnInteraction : false,
+} ,
+loop: true,
+
+// If we need pagination
+pagination: {
+  el: '.swiper-pagination',
+  clickable : true,
+},
+
+// Navigation arrows
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+
+});
+      </script>
+
+
+<!--Training Session-->
+<div id="practice-session" class="practice-session">
+    <div id="prac">
+    <h1>Practice Session</h1>
+    <p>Roads were made for journeys not for Destination</p>
+</div>
+    <div>
+        <video width="320" height="240"controls>
+            <source src="./resources/video/WhatsApp Video 2022-04-12 at 7.26.11 PM.mp4" type="video/mp4">
+            your browser doesnot support
+        </video> 
+
+    </div>
+</div>
+
+<!--Footer-->
+  <footer id="footer">
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img class="logo1" src="./resources/image/logo.jpg" alt="Routaturus"></img>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/Routaurus/posts/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/routaurus?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">Practice Session</a></li>
+          <li><a href="#">Tour planning</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Videography</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Prefrences</a></li>
+          <li><a href="#">Purchase</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="#">Routaurus.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
